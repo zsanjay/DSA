@@ -1,0 +1,33 @@
+package queue;
+
+import java.util.LinkedList;
+import java.util.Queue;
+
+public class GenerateBinaryNumbers {
+
+	public static void main(String[] args) {
+		
+		System.out.println(generate(14));
+		
+		long c = 4 | 0;
+		System.out.println(c);
+
+	}
+
+	private static String generate(long n) {
+		
+		StringBuffer sb = new StringBuffer();
+		Queue<String> queue = new LinkedList<>();
+		queue.add("1");
+		while(n-- > 0)
+		{
+			String value = queue.poll();
+			queue.add(value+"0");
+			queue.add(value+"1");
+			sb.append(value+" ");
+		}
+		
+		return sb.toString();
+	}
+
+}

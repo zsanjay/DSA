@@ -1,0 +1,3 @@
+INDEX VERSION 1.131+/Users/sanjaysmacbook/Documents/DSA/STS/.metadata/.plugins/org.eclipse.jdt.core
+842498197.index
+135470842.index
